@@ -6,6 +6,9 @@ Dependencies
 * GCC 12.2.0
 * GNU Make 4.4
 * GNU coreutils 9.1
+
+Optional
+--------
 * GNU indent 2.2.12
 
 Coding style
