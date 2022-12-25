@@ -11,6 +11,6 @@ Dependencies
 Coding style
 ------------
 
+* K&R
 * 8 spaces for indentation.
 * Lines can't exceed 110 characters.
-* [K&R](https://en.wikipedia.org/wiki/Indentation_style#K&R_style).
