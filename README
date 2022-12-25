@@ -13,7 +13,6 @@ Optional
 
 Coding style
 ------------
-
 * K&R
 * 8 spaces for indentation.
 * Lines can't exceed 110 characters.
