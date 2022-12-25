@@ -9,18 +9,18 @@
 int main(int argc, char *argv[])
 {
         char opt;
-        int ln_opt;
+        int no_ln;
 
-        while ((opt = getopt(argc, argv, ":hn")) != -1) {
+        while ((opt = getopt(argc, argv, ":hP")) != -1) {
                 switch (opt) {
                 case 'h':
-                        puts("Usage: whereami [-h] [-n]");
+                        puts("Usage: whereami [-h] [-P]");
                         exit(EX_OK);
 
                         break;
 
-                case 'n':
-                        ln_opt = 1;
+                case 'P':
+                        no_ln = 1;
                         break;
 
                 case '?':
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
         }
 
         // Resolve symlinks in path.
-        if (ln_opt) {
+        if (no_ln) {
                 char cwd[PATH_MAX];
 
                 if (getcwd(cwd, sizeof(cwd)) == NULL) {
