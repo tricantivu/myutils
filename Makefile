@@ -23,3 +23,6 @@ install: compile
 
 uninstall: $(BIN)
 	@rm -v $(BIN)
+
+syntax: src/*.c
+	@$(CC) $(CFLAGS) -fsyntax-only src/*.c
