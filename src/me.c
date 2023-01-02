@@ -1,4 +1,4 @@
-// Re-write of whoami(1).
+// whoami(1).
 
 #include <pwd.h>
 #include <stdio.h>

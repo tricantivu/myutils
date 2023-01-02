@@ -1,4 +1,4 @@
-// Re-write of pwd(1)
+// pwd(1)
 
 #include <stdio.h>
 #include <unistd.h>

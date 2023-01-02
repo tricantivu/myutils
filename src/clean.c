@@ -1,4 +1,4 @@
-// Re-write of clear(1).
+// clear(1).
 
 #include <stdio.h>
 #include <unistd.h>

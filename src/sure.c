@@ -1,4 +1,4 @@
-// Re-write of yes(1).
+// yes(1).
 
 #include <stdio.h>
 #include <unistd.h>
