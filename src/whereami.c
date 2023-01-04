@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
                         break;
 
                 case '?':
-                        fprintf(stderr, "whereami: invalid option -%c\n", opt);
+                        fprintf(stderr, "whereami: invalid option -%c\n", optopt);
                         exit(EX_USAGE);
 
                         break;
