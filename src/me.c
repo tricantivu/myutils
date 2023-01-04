@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
                         break;
 
                 case '?':
-                        fprintf(stderr, "me: invalid option -%c.", optopt);
+                        fprintf(stderr, "me: invalid option -%c\n.", optopt);
                         exit(EX_USAGE);
 
                         break;
