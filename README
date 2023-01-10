@@ -11,6 +11,12 @@ Optional
 --------
 * GNU indent 2.2.12
 
+Installation
+------------
+
+1. git clone https//github.com/tricantivu/myutils.git
+2. make install (with root privileges)
+
 Coding style
 ------------
 * K&R
