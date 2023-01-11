@@ -1,4 +1,3 @@
-CC = gcc
 CFLAGS = -Wall
 
 DEST = /usr/local/bin
