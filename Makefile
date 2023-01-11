@@ -14,6 +14,8 @@ BIN = \
 	$(DEST)/sure \
 	$(DEST)/me
 
+.PHONY: .o
+
 install: src/*.c
 	@for file in $(SRC); do $(CC) $(CFLAGS) -o $(DEST)/$${file%.c} src/$${file}; done
 	@chmod -v 771 $(BIN)
@@ -23,3 +25,6 @@ uninstall: $(BIN)
 
 syntax: src/*.c
 	@$(CC) $(CFLAGS) -fsyntax-only src/*.c
+
+.o:
+	@for file in $(SRC); do $(CC) $(CFLAGS) -o $${file/.c/.o} src/$${file}; done
