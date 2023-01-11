@@ -14,10 +14,8 @@ BIN = \
 	$(DEST)/sure \
 	$(DEST)/me
 
-compile: src/*.c
+install: src/*.c
 	@for file in $(SRC); do $(CC) $(CFLAGS) -o $(DEST)/$${file%.c} src/$${file}; done
-
-install: compile
 	@chmod -v 771 $(BIN)
 
 uninstall: $(BIN)
