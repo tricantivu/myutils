@@ -15,7 +15,7 @@ Installation
 ------------
 
 1. git clone https//github.com/tricantivu/myutils.git
-2. make install (with root privileges)
+2. make (with root privileges)
 
 Coding style
 ------------
